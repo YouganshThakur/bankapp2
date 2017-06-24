@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="24dp"
+        android:text="Wallet Balance: Rs 199.15"
+        android:textSize="20sp"
+        android:id="@+id/heading"
+        android:textStyle="bold"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        android:id="@+id/amountEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="24dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Amount"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 500"
+        android:elevation="16dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@+id/amountEditText"
+        app:layout_constraintLeft_toLeftOf="@+id/amountEditText"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+
+        android:id="@+id/amount500"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 1000"
+        android:elevation="16dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@+id/amountEditText"
+        app:layout_constraintLeft_toLeftOf="@+id/amountEditText"
+        app:layout_constraintRight_toRightOf="@+id/amountEditText"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+
+        android:id="@+id/amount1000"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 2000"
+        android:elevation="16dp"
+        android:background="@drawable/button_background"
+        app:layout_constraintTop_toBottomOf="@+id/amountEditText"
+        app:layout_constraintRight_toRightOf="@+id/amountEditText"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+
+        android:id="@+id/amount2000"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:text="Add Money"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/amount1000"
+        android:layout_margin="16dp"
+        android:background="@drawable/add_money_button"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+
+        />
+
+</android.support.constraint.ConstraintLayout>

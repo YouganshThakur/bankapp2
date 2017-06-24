@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UPI"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="17sp"
+        android:id="@+id/upiHeading"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your Virtual Payment Address(VPA)"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@+id/upiHeading"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="16dp"
+        android:id="@+id/vpaHeading"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vpaHeading"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:id="@+id/vpaEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="VPA is a unique payment address that can be linked to a person's bank accounts to make payment."
+        app:layout_constraintTop_toBottomOf="@+id/vpaEditText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="16sp"
+        android:textStyle="italic"
+
+
+        android:id="@+id/extraText"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Pay now"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/extraText"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/add_money_button"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:id="@+id/walletPaynow"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp" />
+</android.support.constraint.ConstraintLayout>
